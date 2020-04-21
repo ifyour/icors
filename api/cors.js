@@ -1,9 +1,9 @@
-var options = {
+const options = {
   originWhitelist: [],
   requireHeader: [],
   removeHeaders: [],
 };
-var cors_proxy = require('./lib/cors-anywhere').createServer(options);
+const cors_proxy = require('./lib/cors-anywhere').createServer(options);
 
 
 module.exports = (req, res) => {
