@@ -21,7 +21,7 @@ app.get('/', (req, res, next) => {
   let url = req.query.url;
 
   if (!url) { // If no URL specified
-    res.send('URL no specified, like this: /?url=https://example.com/ , try agin.');
+    res.send('URL no specified.');
     return;
   }
 
@@ -43,7 +43,5 @@ app.get('/', (req, res, next) => {
 
 // Listen on port 5000
 app.listen(port, () => {
-  console.log(`Server is booming on port 5000
-Visit http://localhost:5000`);
+  console.log(`Server is booming on port 5000 Visit http://localhost:5000`);
 });
-
