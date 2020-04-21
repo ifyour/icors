@@ -1,13 +1,13 @@
 {
-  "name": "now-cors",
+  "name": "icors",
   "version": "1.0.0",
-  "description": "",
+  "description": "🤖 A basic Nodejs Serverless CORS Proxy.",
   "main": "index.js",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node ./api/server.js"
   },
   "author": "ifyour",
   "license": "MIT",
