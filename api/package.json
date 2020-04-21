@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "express": "^4.17.1",
-    "request": "^2.88.0"
+    "http-proxy": "1.11.1",
+    "proxy-from-env": "0.0.1"
   }
 }

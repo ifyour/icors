@@ -2,21 +2,19 @@
   "name": "icors",
   "version": "1.0.0",
   "description": "🤖 A basic Nodejs Serverless CORS Proxy.",
-  "main": "index.js",
+  "main": "./api/cors.js",
   "engines": {
     "node": "12.x"
   },
-  "scripts": {
-    "start": "node ./api/server.js"
-  },
+  "scripts": {},
   "author": "ifyour",
   "license": "MIT",
   "eslintConfig": {
     "extends": "eslint-config-ifyour"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "request": "^2.88.0"
+    "http-proxy": "1.11.1",
+    "proxy-from-env": "0.0.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
