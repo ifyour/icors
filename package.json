@@ -1,0 +1,25 @@
+{
+  "name": "now-cors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ifyour",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "eslint-config-ifyour"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-ifyour": "^1.0.6"
+  }
+}
