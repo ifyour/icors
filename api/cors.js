@@ -1,14 +1,15 @@
-var host = process.env.HOST || '0.0.0.0';
-var port = process.env.PORT || 8080;
+var options = {
+  originWhitelist: [],
+  requireHeader: [],
+  removeHeaders: [],
+};
+var cors_proxy = require('./lib/cors-anywhere').createServer(options);
 
-var cors_proxy = require('./lib/cors-anywhere');
 
-cors_proxy.
-  createServer({
-    originWhitelist: [],
-    requireHeader: [],
-    removeHeaders: [],
-  })
-  .listen(port, host, function () {
-    console.log('Running CORS Anywhere on ' + host + ':' + port);
-  });
+module.exports = (req, res) => {
+
+  // fix: Error: getaddrinfo ENOTFOUND https
+  const url = Object.assign(req, { url: req.url.replace(':/', '://') });
+
+  cors_proxy.emit('request', url, res);
+};
