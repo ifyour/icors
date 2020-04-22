@@ -1,14 +1,12 @@
 This API enables cross-origin requests to anywhere.
 
-Usage:
 
+Usage:
 /<url>   Create a request to <url>, and includes CORS headers in the response.
 
 
-Example:
-
-https://icors.now.sh/https://httpbin.org/anything
-
+Example: 
+https://icors.now.sh/?https://httpbin.org/anything
 
 
 If the protocol is omitted, it defaults to http (https if port 443 is specified).
