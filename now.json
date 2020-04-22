@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "/api/cors.js",
-      "use": "@now/node@0.11.1"
-    }
-  ],
   "routes": [
     {
       "src": "/",
