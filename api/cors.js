@@ -1,4 +1,4 @@
-const cors_proxy = require("./lib/cors-anywhere").createServer({
+const cors_proxy = require("cors-anywhere").createServer({
   originWhitelist: [],
   requireHeader: [],
   removeHeaders: [],
