@@ -1,2 +1,6 @@
+ports:
+  - port: 3000
+  
 tasks:
   - init: npm i now -g
+  - command: npm i && npm start
