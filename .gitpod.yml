@@ -1,5 +1,2 @@
-ports:
-  - port: 3000
-
 tasks:
-  - init: npm i now -g && npm i
+  - init: npm i now -g
