@@ -1,9 +1,8 @@
-const options = {
+const cors_proxy = require("./lib/cors-anywhere").createServer({
   originWhitelist: [],
   requireHeader: [],
   removeHeaders: [],
-};
-const cors_proxy = require("./lib/cors-anywhere").createServer(options);
+});
 
 module.exports = (req, res) => {
   const [_url] = Object.keys(req.query);
