@@ -7,9 +7,6 @@ const cors_proxy = require('./lib/cors-anywhere').createServer(options);
 
 
 module.exports = (req, res) => {
-  
-  // ZEIT Bug: `/https://xxx.com` -> `/https:/xxx.com`
-  req.url = req.url.replace(':/', '://');
-  
+  req.url = `/${req.query.url || ''}`;
   cors_proxy.emit('request', req, res);
 };
