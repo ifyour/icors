@@ -7,6 +7,7 @@ const cors_proxy = require('./lib/cors-anywhere').createServer(options);
 
 
 module.exports = (req, res) => {
-  req.url = `/${req.query.url || ''}`;
+  const [_url] = Object.keys(req.query);
+  req.url = `/${_url || ''}`;
   cors_proxy.emit('request', req, res);
 };

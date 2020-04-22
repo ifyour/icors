@@ -5,7 +5,7 @@
 
 ## Usage
 
-Example: https://icors.now.sh/?url=https://httpbin.org/anything
+Example: https://icors.now.sh/?https://httpbin.org/anything
 
 
 ## License
