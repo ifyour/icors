@@ -6,7 +6,12 @@
   "engines": {
     "node": "12.x"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "now dev",
+    "pre-build": "now",
+    "build": "now --prod"
+  },
   "author": "ifyour",
   "license": "MIT",
   "eslintConfig": {
