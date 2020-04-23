@@ -4,7 +4,7 @@
 
 
 ## Usage
-/<?url>   Create a request, and includes CORS headers in the response.
+`/<?url>`  Create a request, and includes CORS headers in the response.
 
 
 ## Example
