@@ -1,6 +1,6 @@
 # 🤖 icors
 
-> A Serverless CORS proxy, This API enables cross-origin requests to anywhere.
+> A Serverless CORS proxy, this API enables cross-origin requests to anywhere.
 
 
 ## Usage
