@@ -8,4 +8,4 @@
 
 
 ## Example
-https://icors.now.sh/?https://httpbin.org/anythin
+https://icors.now.sh/?https://httpbin.org/anything
