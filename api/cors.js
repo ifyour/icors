@@ -1,3 +1,4 @@
+const path = require('path');
 const cors_proxy = require("cors-anywhere").createServer({
   originWhitelist: [],
   requireHeader: [],
@@ -5,7 +6,8 @@ const cors_proxy = require("cors-anywhere").createServer({
   redirectSameOrigin: true,
   httpProxyOptions: {
     xfwd: false
-  }
+  },
+  helpFile: path.resolve(__dirname, '../help.txt'),
 });
 
 module.exports = (req, res) => {
