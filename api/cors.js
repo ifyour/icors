@@ -4,7 +4,7 @@ const cors_proxy = require("cors-anywhere").createServer({
   removeHeaders: [],
   redirectSameOrigin: true,
   httpProxyOptions: {
-    xfwd: true
+    xfwd: false
   }
 });
 
