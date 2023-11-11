@@ -4,7 +4,7 @@
   "description": "🤖 A basic Nodejs Serverless CORS Proxy.",
   "main": "./api/cors.js",
   "engines": {
-    "node": "12.x"
+    "node": "18.x"
   },
   "scripts": {},
   "author": "ifyour",
